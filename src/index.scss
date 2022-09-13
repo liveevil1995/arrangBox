@@ -1,0 +1,60 @@
+@import 'sass/reboot';
+@import 'sass/var';
+@import 'sass/fonts';
+@import 'sass/blocks/arrangeBox';
+@import 'sass/blocks/buttons';
+@import 'sass/blocks/product-list';
+@import 'sass/blocks/search';
+@import 'sass/blocks/media';
+
+body {
+    font-family: 'Roboto';
+    user-select: none;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: $main-color;
+    position: relative;
+    z-index: 3;
+}
+
+
+.section {
+    background: url('img/bg.jpg') center center/cover no-repeat;
+    position: relative;
+    padding: 1rem 0 3rem 0;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;               /* ширина scrollbar */
+}
+::-webkit-scrollbar-track {
+    background: #e4b4b4;        /* цвет дорожки */
+}
+::-webkit-scrollbar-thumb {
+    background-color: $main-color;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    // border: 3px solid orange;  /* padding вокруг плашки */
+}

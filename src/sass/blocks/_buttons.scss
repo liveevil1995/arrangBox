@@ -1,0 +1,31 @@
+.button {
+    display: inline-flex;
+    cursor: pointer;
+    align-items: center;
+    vertical-align: bottom;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    background: $main-color;
+    border: 1px solid $main-color;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    &:disabled {
+        cursor: default;
+        opacity: 0.7;
+    }
+    img {
+        width: 2.5rem;
+        height: 2rem;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px #e4b4b4;
+    }
+    &_m0 {
+        display: block;
+        margin: 0 auto;
+    }
+}

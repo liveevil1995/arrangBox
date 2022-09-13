@@ -1,0 +1,46 @@
+.arrangeBox {
+    position: relative;
+    z-index: 2;
+    &__wrapper {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    &__buttons {
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    
+    &__block {
+        flex: 1 1 50%;
+        &-title {
+            background: $second-color;
+            color: #343a40;
+            border: 1px solid $second-color;
+            padding: 1.25rem;
+            border-bottom: 0 none;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
+        }
+        &-filter {
+            padding: 1.5rem 1.25rem;
+            background: #ffffff;
+            border: 1px solid $second-color;
+            border-bottom: 0 none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-buttons {
+            display: flex;
+            gap: 0.5rem;
+        }
+    }
+}
+
+// .arrangeBox__buttons .button:not(:last-child) {
+//     margin-bottom: 20px;
+// }
